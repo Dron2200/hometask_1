@@ -12,7 +12,7 @@ Vagrant.configure("2") do |config|
 
     vmu.vm.provider "virtualbox" do |vb|
 	vb.name = "VMubunte"
-    vb.gui = true
+    vb.gui = false
   # Customize the amount of memory on the VM:
     vb.memory = "2048"
     end
@@ -25,7 +25,7 @@ Vagrant.configure("2") do |config|
 
     vmc.vm.provider "virtualbox" do |vb|
 	vb.name = "VMCentos"
-    vb.gui = true
+    vb.gui = false
   # Customize the amount of memory on the VM:
     vb.memory = "2048"
 	end
